@@ -14,9 +14,9 @@ const student1: Student = {
   
 const student2: Student = {
   firstName: "Lydia",
-  lastName: "Iboyo",
+  lastName: "Smith",
   age: 22,
-  location: "Bayelsa Yenagua"
+  location: "Los Angeles"
 };
     
     const studentsList: Student[] = [student1, student2];
