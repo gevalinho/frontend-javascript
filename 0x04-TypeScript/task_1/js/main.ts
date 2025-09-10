@@ -5,7 +5,7 @@ interface Student {
     location: string;
     }   
 
-    interface Teacher {
+ interface Teacher {
   readonly firstName: string;           // Set initially, then immutable
   readonly lastName: string;            // Set initially, then immutable
   fullTimeEmployee: boolean;            // Always required
