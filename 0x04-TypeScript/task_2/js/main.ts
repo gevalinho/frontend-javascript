@@ -77,7 +77,25 @@ console.log(executeWork(createEmployee(200)));  // Getting to work
 console.log(executeWork(createEmployee(1000))); // Getting to director tasks
 
 // Interface for Subjects
-interface Subjects {
-  math(): string;
-  history(): string;
+// interface Subjects {
+//   math(): string;
+//   history(): string;
+// }
+
+// ---- Task 7 ----
+
+// String literal type
+type Subjects = "Math" | "History";
+
+// Function teachClass
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  }
+  return "Teaching History";
 }
+
+// Example usage
+console.log(teachClass("Math"));     // Teaching Math
+console.log(teachClass("History"));  // Teaching History
+
