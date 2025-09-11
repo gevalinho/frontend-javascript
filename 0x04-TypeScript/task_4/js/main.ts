@@ -4,29 +4,30 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-// Create a teacher
-const teacher: Subjects.Teacher = {
+export const cpp = new Subjects.Cpp();
+export const java = new Subjects.Java();
+export const react = new Subjects.React();
+
+export const cTeacher: Subjects.Teacher = {
   firstName: "John",
   lastName: "Doe",
-  experienceTeachingC: 5,
-  experienceTeachingJava: 2,
-  experienceTeachingReact: 0,
+  experienceTeachingC: 10,
 };
 
-// Test Cpp
-const cpp = new Subjects.Cpp();
-cpp.setTeacher(teacher);
-console.log(cpp.getRequirements());       // "Here is the list of requirements for Cpp"
-console.log(cpp.getAvailableTeacher());  // "Available Teacher: John"
+// Cpp
+console.log("C++");
+cpp.setTeacher(cTeacher);
+console.log(cpp.getRequirements());
+console.log(cpp.getAvailableTeacher());
 
-// Test Java
-const java = new Subjects.Java();
-java.setTeacher(teacher);
-console.log(java.getRequirements());       // "Here is the list of requirements for Java"
-console.log(java.getAvailableTeacher());  // "Available Teacher: John"
+// Java
+console.log("Java");
+java.setTeacher(cTeacher);
+console.log(java.getRequirements());
+console.log(java.getAvailableTeacher());
 
-// Test React
-const react = new Subjects.React();
-react.setTeacher(teacher);
-console.log(react.getRequirements());      // "Here is the list of requirements for React"
-console.log(react.getAvailableTeacher()); // "No available teacher" (since experienceTeachingReact = 0)
+// React
+console.log("React");
+react.setTeacher(cTeacher);
+console.log(react.getRequirements());
+console.log(react.getAvailableTeacher());
