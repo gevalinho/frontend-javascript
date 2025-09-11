@@ -99,3 +99,5 @@ function teachClass(todayClass: Subjects): string {
 console.log(teachClass("Math"));     // Teaching Math
 console.log(teachClass("History"));  // Teaching History
 
+export {};
+
